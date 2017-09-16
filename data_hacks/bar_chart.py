@@ -66,7 +66,6 @@ def run(input_stream, options, output=sys.stdout):
     max_value = max(data.values())
     scale = int(math.ceil(float(max_value) / value_characters))
     scale = max(1, scale)
-
     print(
         "# each " + options.dot + " represents a count of %d. total %d" % (scale, total),
         file=output)
